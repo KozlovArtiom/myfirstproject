@@ -1,13 +1,22 @@
-"use sсtrict";
+const numberOfFilms = prompt('Сколько фильмов Вы уже просмотрели?', '');
+// формирование объекта для заполнения
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
 
-let a = 15;
-console.log(a);
-let Num = 5;
-const leftBorderWidth = 1;
+const lastFilm1 = 
+  prompt('Назовите один из последних, просмотренных Вами фильмов', '');
+const rating1 = prompt(`Оцените фильм ${lastFilm1} по 10-ти бальной шкале`, '');
 
-//console.log(Num);
+const lastFilm2 = 
+  prompt('Назовите один из последних, просмотренных Вами фильмов', '');
+const rating2 = prompt(`Оцените фильм ${lastFilm2} по 10-ти бальной шкале`, '');
 
-let name = 'Artem';
-let age = 16;
+// запись результатов опроса в объект
 
-console.log(`Меня зовут ${name}, мне ${age} лет`)
+personalMovieDB.movies[lastFilm1] = rating1;
+personalMovieDB.movies[lastFilm2] = rating2;
