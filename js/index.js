@@ -5,4 +5,9 @@ console.log(a);
 let Num = 5;
 const leftBorderWidth = 1;
 
-console.log(Num);
+//console.log(Num);
+
+let name = 'Artem';
+let age = 16;
+
+console.log(`Меня зовут ${name}, мне ${age} лет`)
