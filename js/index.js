@@ -1,4 +1,4 @@
-const numberOfFilms = prompt('Сколько фильмов Вы уже просмотрели?', '');
+/* const numberOfFilms = prompt('Сколько фильмов Вы уже просмотрели?', '');
 // формирование объекта для заполнения
 const personalMovieDB = {
     count: numberOfFilms,
@@ -19,4 +19,17 @@ const rating2 = prompt(`Оцените фильм ${lastFilm2} по 10-ти ба
 // запись результатов опроса в объект
 
 personalMovieDB.movies[lastFilm1] = rating1;
-personalMovieDB.movies[lastFilm2] = rating2;
+personalMovieDB.movies[lastFilm2] = rating2; */
+
+/*
+let src = 11;
+switch (src) {
+  case 10:
+    console.log("правильно!");
+    break;
+  case 12:
+    console.log('Ошибочка');
+    break;
+  default:
+    console.log('Попробуй еще!!!')
+}; */
