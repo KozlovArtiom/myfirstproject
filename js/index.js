@@ -33,3 +33,11 @@ switch (src) {
   default:
     console.log('Попробуй еще!!!')
 }; */
+
+/*let src = 30;
+src<40?console.log('src<40'):console.log('src>40');
+
+const func = a => {
+  return a*a;
+};
+console.log(func(3))*/
