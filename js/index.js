@@ -41,3 +41,24 @@ const func = a => {
   return a*a;
 };
 console.log(func(3))*/
+
+/*const obj = {
+  name: 'Artem',
+  age: 16,
+  family: {
+    mother: 'Irina',
+    father: 'Evgeniy',
+    brother: [
+      'Dmitriy',
+      'Semen'
+    ],
+  },
+  education: ['JS', 'Liceum']
+};
+
+for (let key in obj) {
+  console.log(key, obj[key]);
+}
+
+const {mother, father} = obj.family;
+console.log(mother, father);*/
