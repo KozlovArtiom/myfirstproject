@@ -62,3 +62,13 @@ for (let key in obj) {
 
 const {mother, father} = obj.family;
 console.log(mother, father);*/
+
+let arr = [1, 12, 3, 34, 52, 6];
+// arr.forEach((item, i, arr) => {
+//   console.log(`${i}: ${item} in ${arr}`);
+// });
+
+arr.sort((a,b) => {
+  return a-b;
+});
+console.log(arr);
