@@ -1,6 +1,7 @@
 'use strict';
 
 let numberOfFilms
+
 function start() {
   numberOfFilms = +prompt('Сколько фильмов Вы уже просмотрели?', '');
   while (numberOfFilms == '' || numberOfFilms == null || isNaN(numberOfFilms)) {
@@ -12,25 +13,24 @@ start();
 
 // формирование объекта для заполнения
 const personalMovieDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
+  count: numberOfFilms,
+  movies: {},
+  actors: {},
+  genres: [],
+  privat: false
 };
 
-function rememberMyFilms () {
+function rememberMyFilms() {
   let lastWatchingFilms = prompt('Сколько фильмов Вы недавно просмотрели?', '');
-  for(lastWatchingFilms; lastWatchingFilms>0; lastWatchingFilms--) {
-    const lastFilm = 
-  prompt('Назовите один из последних, просмотренных Вами фильмов', '');
+  for (lastWatchingFilms; lastWatchingFilms > 0; lastWatchingFilms--) {
+    const lastFilm = prompt('Назовите один из последних, просмотренных Вами фильмов', '');
     const rating = prompt(`Оцените фильм ${lastFilm} по 10-ти бальной шкале`, '');
 
     if (lastFilm != '' && rating != '' && lastFilm != null && rating != null && lastFilm.length < 50) {
-        personalMovieDB.movies[lastFilm] = rating;
+      personalMovieDB.movies[lastFilm] = rating;
     } else {
-        console.log('error');
-        lastWatchingFilms++;
+      console.log('error');
+      lastWatchingFilms++;
     }
   }
 }
@@ -73,13 +73,11 @@ function showMyDB() {
 showMyDB()
 
 function writeYourGenres(objJanres) {
-  for (let i = 1; i <= 3; i++){
-    objJanres[i-1] = prompt(`Введите ваш любимый жанр под номером ${i}`);
+  for (let i = 1; i <= 3; i++) {
+    objJanres[i - 1] = prompt(`Введите ваш любимый жанр под номером ${i}`);
   }
-  for (let i = 0; i < 3; i++){
+  for (let i = 0; i < 3; i++) {
     console.log(objJanres[i]);
   }
 }
 writeYourGenres(personalMovieDB.genres);
-
-
