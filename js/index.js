@@ -63,12 +63,24 @@ for (let key in obj) {
 const {mother, father} = obj.family;
 console.log(mother, father);*/
 
-let arr = [1, 12, 3, 34, 52, 6];
+// let arr = [1, 12, 3, 34, 52, 6];
 // arr.forEach((item, i, arr) => {
 //   console.log(`${i}: ${item} in ${arr}`);
-// });
+// // });
 
-arr.sort((a,b) => {
-  return a-b;
-});
-console.log(arr);
+// const arr2 = [...arr];
+// arr2[2] = 4;
+// console.log(arr);
+// console.log(arr2);
+
+// let obj = {
+//   one: 1,
+//   two: 2
+// }
+
+// const obj2 = {};
+
+// obj2.one = 2;
+
+// console.log(obj);
+// console.log(obj2);
